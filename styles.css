@@ -50,5 +50,8 @@ table {
 :root {
     --background-color: #FEFAE0;
     --font-color: #D4A373;
+	--square-color: #ccd5ae;
+	--hover-color: #faedcd;
     --font-family: 'Playfair Display', serif;
+	
 }
