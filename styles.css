@@ -48,10 +48,29 @@ table {
 }
 
 :root {
-    --background-color: #FEFAE0;
-    --font-color: #D4A373;
-	--square-color: #ccd5ae;
-	--hover-color: #faedcd;
+    --background-color: #D4A373;
+    --font-color: #fefae0;
+  	--square-color: #ccd5ae;
+    --hover-color: #D4A373;
     --font-family: 'Playfair Display', serif;
 	
+}
+
+*{
+	box-sizing: border-box;
+}
+body{
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: var(--font-family);
+}
+a{
+  text-decoration: none;
+  color: var(--font-color);
+}
+#services{ 
+ font-family: var(--font-family);
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
 }
