@@ -11,7 +11,7 @@ $("#tabs").css({
     "color": "var(--font-color)",
     "font-family": "var(--font-family)"
   });
-$("#tabs ul").css({
+$("#tabs ul-tabs").css({
   "text-align": "center",
   "background-color": "var(--square-color)",
   "color": "var(--font-color)"
