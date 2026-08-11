@@ -63,13 +63,23 @@
     <p>Price: $150</p>
   </div>
 </div>
-</section>
 
+
+</section>
+<section id="about">
+  <h2>About Harper Photography</h2>
+  <p>Harper Photography is about capturing life's precious moments and telling your story through the lens.</p>
+</section>
   <section id="contact">
-      <h2>Let me take your picture!</h2>
-      <p>Fill out the form below and I'll get in touch with you!</p>
+    <div class="form-container">
+      <div class="contact-box">
+        <div class="left">
+        </div>
+        <div class="right">
+          <h2>Fill out the form below and I'll get in touch with you!</h2>
     <form action="submit_form.php" method="post">
-		<label for="name">Name<span class="required" aria-hidden="true">*</span></label>
+
+    <label for="name">Name<span class="required" aria-hidden="true">*</span></label>
 		<input type="text" id="name" name="name" autocomplete="name" required>
 
     <label for="email">Email<span class="required" aria-hidden="true">*</span></label>
@@ -87,9 +97,11 @@
 			<label for="pref-email">Email</label>
 
       </fieldset>
-      <button type="submit">Submit</button>
+      <button type="submit" class="btn">Send</button>
     </form>
-
+        </div>
+  </div>
+    </div>
   </section>
         </main>
         <footer> <p>&copy; 2026 Harper Photography. All rights reserved.</p></footer>

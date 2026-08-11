@@ -48,10 +48,11 @@ table {
 }
 /* Root Styles */
 :root {
-    --background-color: #D4A373;
-    --font-color: #fefae0;
-  	--square-color: #ccd5ae;
-    --hover-color: #D4A373;
+    --font-color: #D4A373;
+    --background-color: #fefae0;
+  	--hover-color: #ccd5ae;
+    --square-color: #faedcd;
+    --button-color: #e9edc9;
     --font-family: 'Playfair Display', serif;
 	
 }
@@ -60,6 +61,11 @@ table {
 	box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 /*Custom Styles */
 body{
@@ -71,11 +77,106 @@ a{
   text-decoration: none;
   color: var(--font-color);
 }
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  display: block;
+  color: var(--font-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: var(--hover-color);
+  color: var(--square-color);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
 
 #services{ 
- font-family: var(--font-family);
   font-size: 1rem;
   text-align: center;
   margin-top: 2rem;
+}
+.form-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+  overflow: hidden;
+}
+.form-container:after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/flowers.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(25px);
+}
+.contact-box{
+  border-radius: 2em;
+  max-width: 850px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--square-color);
+}
+.left{
+  height: 100%;
+  background: url('images/flowers.jpg') no-repeat center center;
+  background-size: cover;
+}
+.right{
+  padding: 40px 40px;
+}
+.field{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid var(--button-color);
+  background-color: var(--square-color);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s ease;
+  border-radius: 1em;
+}
+.field:hover{
+  background-color: var(--hover-color);
+}
+.field:focus{
+  border: 1px solid var(--font-color);
+}
+.btn{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--button-color);
+  font-size: 1.1rem;
+  border:none;
+  border-radius: 1em;
+  cursor: pointer;
+  color: var(--font-color);
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+.btn:hover{
+  background-color: var(--hover-color);
+  color: var(--square-color);
 }
