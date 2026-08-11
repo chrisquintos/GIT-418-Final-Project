@@ -53,6 +53,7 @@ table {
   	--hover-color: #ccd5ae;
     --square-color: #faedcd;
     --button-color: #e9edc9;
+    --contrast-color: #8C5F33;
     --font-family: 'Playfair Display', serif;
 	
 }
@@ -106,6 +107,8 @@ ul li a:hover {
   text-align: center;
   margin-top: 2rem;
 }
+
+/* Contact Form Styles */
 .form-container {
   display: flex;
   position: relative;
@@ -151,7 +154,8 @@ ul li a:hover {
   padding: 0.5rem 1rem;
   outline: none;
   border: 1px solid var(--button-color);
-  background-color: var(--square-color);
+  background-color: var(--background-color);
+  color: var(--contrast-color);
   font-size: 1.1rem;
   margin-bottom: 22px;
   transition: 0.3s ease;
@@ -161,7 +165,7 @@ ul li a:hover {
   background-color: var(--hover-color);
 }
 .field:focus{
-  border: 1px solid var(--font-color);
+  border: 1px solid var(--square-color);
 }
 .btn{
   width: 100%;
@@ -179,4 +183,13 @@ ul li a:hover {
 .btn:hover{
   background-color: var(--hover-color);
   color: var(--square-color);
+}
+fieldset{
+  border: none;
+  margin: 0.75em;
+  padding: 0.5rem;
+}
+footer{
+  text-align: center;
+  padding: 1rem;
 }
