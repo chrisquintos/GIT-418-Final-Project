@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* Root Styles */
 :root {
     --background-color: #D4A373;
     --font-color: #fefae0;
@@ -55,12 +55,13 @@ table {
     --font-family: 'Playfair Display', serif;
 	
 }
-
+/* Global Styles */
 *{
 	box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+/*Custom Styles */
 body{
   background-color: var(--background-color);
   color: var(--font-color);
@@ -70,6 +71,8 @@ a{
   text-decoration: none;
   color: var(--font-color);
 }
+
+
 #services{ 
  font-family: var(--font-family);
   font-size: 1rem;
