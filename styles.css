@@ -107,6 +107,27 @@ ul li a:hover {
   text-align: center;
   margin-top: 2rem;
 }
+#services p{
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+#about{
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+#about p{
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+#about img{
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
 
 /* Contact Form Styles */
 .form-container {
@@ -189,6 +210,8 @@ fieldset{
   margin: 0.75em;
   padding: 0.5rem;
 }
+
+/* Footer Styles */
 footer{
   text-align: center;
   padding: 1rem;
